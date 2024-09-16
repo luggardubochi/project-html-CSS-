@@ -1,0 +1,810 @@
+@import url("https://fonts.googleapis.com/css2?family=poppins:wght@400;500&family=Roboto&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    font-family: "Poppins", sans-serif;
+    height: 350vh;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(game-images/b.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 300px;
+    height: 10vh;
+    background: #550381;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    clip-path: polygon(0 0, 100% 0, 64% 100%, 0% 100%);
+    padding: 10px;
+    line-height: 1.3rem;
+}
+
+.logo .fas {
+    font-size: 50px;
+}
+
+.logo p {
+    width: 130px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+ul.navbar {
+    display: flex;
+    list-style: none;
+}
+
+ul.navbar li {
+    width: 120px;
+}
+
+ul.navbar li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+ul.navbar li a.active {
+    color: #0c0cce;
+}
+
+ul.navbar li a:hover:not(.active) {
+    color: #0c0cce;
+}
+
+#btn {
+    width: 250px;
+    height: 10vh;
+    background: #0c0cce;
+    color: #000;
+    outline: none;
+    border: none;
+    clip-path: polygon(35% 0, 100% 0, 100% 100%, 0 100%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 40px;
+}
+
+#btn .fas {
+    margin-right: 10px;
+}
+
+/* Header ends here */
+
+.content-wrapper {
+    width: 80%;
+    min-height: 80vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.content-desc h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.content-desc p {
+    width: 550px;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin-bottom: 10px;
+}
+
+.content-desc span {
+    color: #0c0cce;
+}
+
+#btn-2 {
+    width: 350px;
+    height: 10vh;
+    padding-left: 20px;
+    outline: none;
+    border: none;
+    background: #0c0cce;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+    clip-path: polygon(0 0, 74% 0, 100% 100%, 0 100%);
+    border-radius: 20px;
+    text-align: left;
+}
+
+.kratos {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(rgba(38, 2, 39, 0.849), rgb(204, 115, 14));
+    position: relative;
+}
+
+.kratos::after {
+    content: '';
+    width: 400px;
+    height: 400px;
+    background: url(game-images/rakuto.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    left: -150px;
+}
+
+.circle {
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(rgba(38, 2, 39, 0.849));
+    position: relative;
+}
+
+.circle::after {
+    content: '';
+    width: 190px;
+    height: 190px;
+    background: url(game-images/6.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: -190px;
+    left: -225px;
+}
+
+/* Hero section ends here */
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.logo-section h1 {
+    width: 250px;
+    font-size: 2rem;
+    color: #0c0cce;
+    margin-left: 10px;
+}
+
+.logo-section .fas {
+    font-size: 6rem;
+    color: #0c0cce;
+}
+
+/* logo section ends here */
+
+.section-1 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.712)), url(game-images/fortnit.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.section-1-wrapper {
+    width: 70%;
+    margin: auto;
+}
+
+.section-1 h1 {
+    font-size: 1.5rem;
+    color: #0c0cce;
+    font-weight: 450;
+}
+
+.section-1-img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-1-img .img {
+    width: 100px;
+    height: 130px;
+    background: url(game-images/jumanji.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.section-1-img .img-2 {
+    background: url(game-images/nba.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Copy and paste it many times and change the image */
+
+.section-1-img .img-3 {
+    background: url(game-images/battle.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.section-1-img .img-4 {
+    background: url(game-images/warxone.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.section-1-img .img-5 {
+    background: url(game-images/craft.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.section-1-img .img-6 {
+    background: url(game-images/fortnit.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.section-1-img .img-7 {
+    background: url(game-images/game3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.section-1-img .img-8 {
+    background: url(game-images/game.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img:hover {
+    transform: translateY(-10px);
+}
+
+/* section one ends here */
+
+.game-categories {
+    width: 70%;
+    margin: auto;
+    position: relative;
+}
+
+.game-categories h1 {
+    font-size: 1.5rem;
+    margin: 30px 0;
+    color: #0c0cce;
+}
+
+.game-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gw {
+    width: 120px;
+    height: 120px;
+    background: url(game-images/Anpar.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 20px 15px 0 0;
+    border-radius: 10px;
+}
+
+.gw:hover {
+    transform: translateY(-10px);
+}
+
+.left {
+    position: relative;
+    right: -140px;
+}
+
+.gw-1 {
+    background: url(game-images/game2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.gw-2 {
+    background: url(game-images/fortnit.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.gw-3 {
+    background: url(game-images/carrace.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.gw-5 {
+    background: url(game-images/pes22.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.gw-6 {
+    background: url(game-images/warxone.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.gw-7 {
+    background: url(game-images/wras.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.gw-8 {
+    background: url(game-images/battlefield.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.gw-9 {
+    background: url(game-images/craft.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.gw-10 {
+    background: url(game-images/assassin.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Section 1.1 ends here */
+
+.section-2 {
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(game-images/flame.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section-2 h1 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.players {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p-image {
+    width: 200px;
+    height: 200px;
+    background: url(game-images/vaklish.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: relative;
+}
+
+.p-image-1::after {
+    content: 'VS';
+    position: absolute;
+    right: -35px;
+    bottom: 0;
+    font-size: 2rem;
+    color: #0c0cce;
+}
+
+.Players span {
+    font-size: 1.5rem;
+    color: #0c0cce;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 58px;
+}
+
+.stars {
+    color: #0c0cce;
+    margin-top: -50px;
+    padding: 51px;
+}
+
+.p-image-2 {
+    background: url(game-images/rakuto.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.p-image-3 {
+    background: url(game-images/download__4_-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.p-image-3::after {
+    content: 'VS';
+    position: absolute;
+    right: -45px;
+    bottom: 0;
+    font-size: 2rem;
+    color: #0c0cce;
+}
+
+/* section 3 starts here */
+
+.section-3 {
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(game-images/controller.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.section-3 h1 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+}
+
+.section-3-wrapper {
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.feedback {
+    width: 250px;
+    height: 300px;
+    background: url(game-images/feedback.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+}
+
+.feedback-desc {
+    width: 300px;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.767);
+    padding: 10px;
+    color: #fff;
+    margin: 10px;
+}
+
+.feedback-desc .far {
+    color: #0c0cce;
+    font-size: 30px;
+}
+
+.f-images-2 {
+    background: url(game-images/da.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Section 3 ends here */
+
+footer {
+    width: 100%;
+    height: 55vh;
+    background: #282828;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.footer-body {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    height: 12vh;
+    background: #0c0cce;
+    color: #000;
+    line-height: 1.7rem;
+    flex: 1;
+    margin: 10px;
+}
+
+ul h3 {
+    color: #000;
+    font-weight: bold;
+}
+
+ul li {
+    list-style: none;
+    line-height: 2.5rem;
+}
+
+ul li a .fab {
+    font-size: 1.2rem;
+    color: #0c0cce;
+    margin-right: 15px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul li a:hover {
+    color: #0c0cce;
+}
+
+.footer-button {
+    width: 100%;
+    height: 7vh;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.875rem;
+}
+
+.footer-button span {
+    color: #0c0cce;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-desc h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .content-desc p {
+        width: 80%;
+        text-align: center;
+    }
+
+    #btn-2 {
+        width: 80%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .kratos {
+        width: 300px;
+        height: 300px;
+    }
+
+    .kratos::after {
+        width: 300px;
+        height: 300px;
+        left: -100px;
+    }
+
+    .section-1-wrapper {
+        width: 90%;
+    }
+
+    .section-1-img .img {
+        width: 80px;
+        height: 100px;
+    }
+
+    .game-categories {
+        width: 90%;
+    }
+
+    .game-wrapper {
+        justify-content: center;
+    }
+
+    .gw {
+        width: 100px;
+        height: 100px;
+    }
+
+    .section-2 {
+        flex-direction: column;
+    }
+
+    .section-3-wrapper {
+        flex-direction: column;
+    }
+
+    .feedback, .feedback-desc {
+        width: 90%;
+        height: auto;
+    }
+
+    .footer-body {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    ul.navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul.navbar li {
+        width: auto;
+        margin: 5px 0;
+    }
+
+    .content-wrapper {
+        width: 90%;
+    }
+
+    .content-desc h1 {
+        font-size: 2rem;
+    }
+
+    .content-desc p {
+        width: 100%;
+    }
+
+    #btn-2 {
+        width: 100%;
+    }
+
+    .kratos {
+        width: 250px;
+        height: 250px;
+    }
+
+    .kratos::after {
+        width: 250px;
+        height: 250px;
+        left: -80px;
+    }
+
+    .section-1 {
+        height: auto;
+    }
+
+    .section-1-wrapper {
+        width: 100%;
+    }
+
+    .section-1-img .img {
+        width: 70px;
+        height: 90px;
+    }
+
+    .game-categories {
+        width: 100%;
+    }
+
+    .gw {
+        width: 90px;
+        height: 90px;
+    }
+
+    .section-2 {
+        height: auto;
+    }
+
+    .section-2 h1 {
+        font-size: 1.5rem;
+    }
+
+    .players {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .section-3 {
+        height: auto;
+    }
+
+    .section-3-wrapper {
+        width: 100%;
+    }
+
+    .footer-body {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 0.8rem;
+    }
+
+    .logo .fas {
+        font-size: 40px;
+    }
+
+    .content-desc h1 {
+        font-size: 1.5rem;
+    }
+
+    .content-desc p {
+        font-size: 1rem;
+    }
+
+    #btn-2 {
+        font-size: 1rem;
+    }
+
+    .kratos {
+        width: 200px;
+        height: 200px;
+    }
+
+    .kratos::after {
+        width: 200px;
+        height: 200px;
+        left: -50px;
+    }
+
+    .section-1-img .img {
+        width: 60px;
+        height: 80px;
+    }
+
+    .gw {
+        width: 70px;
+        height: 70px;
+    }
+
+    .section-2 h1 {
+        font-size: 1.2rem;
+    }
+
+    .p-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .section-3 h1 {
+        font-size: 1.5rem;
+    }
+
+    .feedback, .feedback-desc {
+        width: 100%;
+    }
+}
